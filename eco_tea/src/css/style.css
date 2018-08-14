@@ -1,4 +1,27 @@
+.mini-articles {
+  /* Giving classes common grid item properties */
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content-wrapper, .mini-articles {
+  /* Giving classes common grid container properties */
+  display: grid;
+}
+
 body {
   background: #0e0e0e;
   color: #fff;
+}
+
+.content-wrapper {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.mini-articles {
+  grid-column: 2 / 3;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
 }

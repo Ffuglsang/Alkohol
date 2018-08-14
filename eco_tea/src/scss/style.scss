@@ -1,8 +1,18 @@
-$bg-color: #0e0e0e  ;
+@import 'mixins/grid';
+
+$bg-color: #0e0e0e;
 $color: #fff;
 
 body {
     background: $bg-color;
     color: $color;
+}
+
+.content-wrapper {
+    @include isGridContainer("repeat(12, 1fr)", none);
+}
+
+.mini-articles {
+    @include isSubGridContainer("2 / 3", none, "repeat(3, 1fr)", none);
 }
 
