@@ -1,0 +1,107 @@
+// /**************************************************
+// Grid mixins 
+// v.1.05
+// ***************************************************/
+// SCSS CSS Grid 
+
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @group Grid
+/// @author Michael Koch
+////
+
+/// Placeholder class with grid item properties
+/// @author Michael Koch
+%gridItemProps {
+    /* Giving classes common grid item properties */
+    // grid-row: auto;
+    width: 100%;
+    // height: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/// Placeholder class with grid container properties
+/// @author Michael Koch
+%gridContainerProps {
+    /* Giving classes common grid container properties */
+    display: grid;
+}
+
+
+/// Mixin to define a grid container
+/// @author Michael Koch
+/// @param {Column specs} $colSpec - Number of columns and spec
+/// @param {Row specs} $rowSpec - Number of rows and spec. For no row parse none.
+@mixin isGridContainer($colSpec, $rowSpec) {
+    @extend %gridContainerProps;
+
+    @if $rowSpec == none {
+        grid-template-columns: #{$colSpec};
+    }
+    @else {
+        grid-template-columns: #{$colSpec};
+        grid-template-rows: #{$rowSpec};
+    }
+}
+
+/// Mixin to define a sub grid container
+/// @author Michael Koch
+/// @param {Column span} $colSpan - Column placement in outer grid
+/// @param {Row span} $rowSpan - Row placement in outer grid
+/// @param {Column specs} $rowSpec - Number of column and spec in inner grid.
+/// @param {Row specs} $rowSpec - Number of rows and spec in inner grid. For no row parse none.
+@mixin isSubGridContainer($colSpan, $rowSpan, $colSpec, $rowSpec) {
+    @extend %gridItemProps;
+    @extend %gridContainerProps;
+    @if $rowSpan == none {
+        grid-column: #{$colSpan};
+        grid-template-columns: #{$colSpec};
+        grid-template-rows: #{$rowSpec};
+    }
+    @else {
+        grid-column: #{$colSpan};
+        grid-row: #{$rowSpan};
+        grid-template-columns: #{$colSpec};
+        grid-template-rows: #{$rowSpec};
+    }
+}
+
+/// Mixin to define a grid item
+/// @author Michael Koch
+/// @param {Column span} $colSpan - Row placement in outer grid
+/// @param {Row span} $rowSpan - Column placement in outer grid. For no row parse none.
+@mixin isGridItem($colSpan, $rowSpan) {
+    @extend %gridItemProps;
+    @if $rowSpan == none {
+        grid-column: #{$colSpan};
+    }
+    @else {
+        grid-column: #{$colSpan}; //overriding rowSpan from gridItemProps
+        grid-row: #{$rowSpan};
+    }
+}
+
+
+$grid-index: (
+  2tm                : 899,
+  2tl                : 1,
+  dropdown           : 210,
+  navigation         : 205,
+  main-header        : 200,
+  gridcontainer      : 90,
+  teaser             : 60,
+  info-text          : 50,
+  bg-image           : 40,
+  test               : "1 / 13"
+);
+
+@function grid-index($key) {
+    @return map-get($grid-index, #{$key});
+}
+
+@mixin grid-index($key) {
+    grid-auto-columns: grid-index($key);
+}
+
