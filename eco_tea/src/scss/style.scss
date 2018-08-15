@@ -3,16 +3,68 @@
 $bg-color: #0e0e0e;
 $color: #fff;
 
+html {
+    scroll-behavior: smooth;
+    user-zoom: fixed;
+}
+
 body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-zoom: fixed;
+    overflow: hidden;
     background: $bg-color;
     color: $color;
+
+    /* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 .content-wrapper {
     @include isGridContainer("repeat(12, 1fr)", none);
+    height: 200px;
+}
+
+.hero {
+    @include isGridItem("2 / -2", none);
+}
+
+.article-wrap {
+    @include isGridItem("2 / -2", none);
+}
+
+.banner {
+    @include isGridItem("1 / span all", none)
 }
 
 .mini-articles {
-    @include isSubGridContainer("2 / 3", none, "repeat(3, 1fr)", none);
+    @include isSubGridContainer("2 / -2", none, "repeat(3, 1fr)", none);
 }
+
+.tea-carousel {
+    @include isGridItem("1 / span all", none)
+}
+
+.contact-form {
+    @include isGridItem("2 / -2", none)
+}
+
+
 
