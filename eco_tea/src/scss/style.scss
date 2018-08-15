@@ -43,7 +43,7 @@ body {
 }
 
 .content-wrapper {
-    @include isGridContainer("1fr minmax(auto, 1200px) 1fr", none);
+    @include isGridContainer("1fr minmax(auto, 1024px) 1fr", none);
     height: 200px;
 
     @include mq-phone {
