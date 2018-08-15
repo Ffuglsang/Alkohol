@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+
+// $orange: #f59b1a;
+// $brown: #a86315;
+// $logocolor: #709a2d;
+//
+// $headerfont: Oswald;
+// $mainfont: Roboto;
+
+
+$orange: #f59b1a;
+$brown: #a86315;
+$logocolor: #709a2d;
+
+$headerfont: 'Oswald', sans-serif;
+$mainfont: 'Roboto', sans-serif;
+
+
+// $orange: var(--tc-orange);
+// $brown: var(--tc-brown);
+// $logocolor: var(--tc-logocolor);
+
+// $headerfont: var(--font-header);
+// $mainfont: var(--font-main);
+
+
+:root {
+    --tc-orange: #{$orange};
+    --tc-brown: #{$brown};
+    --tc-logocolor: #{$logocolor};
+    --font-main: #{$mainfont};
+    --font-header: #{$headerfont};
+}
+
+
