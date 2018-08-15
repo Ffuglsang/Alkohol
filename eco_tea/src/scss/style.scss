@@ -1,9 +1,8 @@
 @import 'mixins/grid';
 @import 'mixins/mqs';
 @import 'vars';
+@import 'hero';
 
-$bg-color: #0e0e0e;
-$color: #fff;
 
 html {
     scroll-behavior: smooth;
@@ -14,8 +13,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: $bg-color;
-    color: $color;
+    background: $light-orange;
 
 
     -webkit-font-smoothing: antialiased;
@@ -44,15 +42,11 @@ body {
 
 .content-wrapper {
     @include isGridContainer("1fr minmax(auto, 1024px) 1fr", none);
-    height: 200px;
+    // height: 200px;
 
     @include mq-phone {
         color: red;
     }
-}
-
-.hero {
-    @include isGridItem("2 / 3", none);
 }
 
 .article-wrap {
