@@ -29,12 +29,12 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #0e0e0e;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-zoom: fixed;
   overflow: hidden;
-  background: #0e0e0e;
-  color: #fff;
   /* Prevent native touch events on Windows */
   -ms-touch-action: none;
   /* Prevent the callout on tap-hold and text selection */
