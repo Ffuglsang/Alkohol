@@ -11,7 +11,7 @@
 $orange: #f59b1a;
 $brown: #a86315;
 $logocolor: #709a2d;
-
+$light-orange: lighten($orange, 90);
 $headerfont: 'Oswald', sans-serif;
 $mainfont: 'Roboto', sans-serif;
 
@@ -31,5 +31,3 @@ $mainfont: 'Roboto', sans-serif;
     --font-main: #{$mainfont};
     --font-header: #{$headerfont};
 }
-
-

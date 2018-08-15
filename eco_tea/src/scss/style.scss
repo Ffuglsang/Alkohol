@@ -14,7 +14,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: $bg-color;
+    background-color: $light-orange;
     color: $color;
 
 
@@ -41,6 +41,37 @@ body {
 	-o-text-size-adjust: none;
 	text-size-adjust: none;
 }
+
+
+header {
+  height: 150px;
+}
+
+#top-logo {
+  width: 75px;
+}
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul li a {
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul a {
+  display: inline-block;
+  list-style-type: none;
+  color: #444;
+}
+
+.tea-variant {
+background-color: $orange;
+}
+
+.top-nav {}
 
 .content-wrapper {
     @include isGridContainer("1fr minmax(auto, 1200px) 1fr", none);
@@ -74,6 +105,3 @@ body {
 .contact-form {
     @include isGridItem("2 / 3", none)
 }
-
-
-

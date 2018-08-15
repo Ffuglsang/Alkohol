@@ -29,7 +29,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #0e0e0e;
+  background-color: white;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,6 +49,34 @@ body {
   -ms-text-size-adjust: none;
   -o-text-size-adjust: none;
   text-size-adjust: none;
+}
+
+header {
+  height: 150px;
+}
+
+#top-logo {
+  width: 75px;
+}
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul li a {
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul a {
+  display: inline-block;
+  list-style-type: none;
+  color: #444;
+}
+
+.tea-variant {
+  background-color: #f59b1a;
 }
 
 .content-wrapper {
