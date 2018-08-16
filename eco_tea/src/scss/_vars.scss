@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 // $orange: #f59b1a;
 // $brown: #a86315;
 // $logocolor: #709a2d;
@@ -13,8 +13,10 @@ $light-orange: lighten($orange, 90);
 $brown: #a86315;
 $logocolor: #709a2d;
 
-$headerfont: 'Oswald', sans-serif;
-$mainfont: 'Roboto', sans-serif;
+// $headerfont: "'Oswald'", sans-serif;
+$headerfont: "'Oswald'", sans-serif;
+$mainfont: "'Roboto'", sans-serif;
+
 
 
 // $orange: var(--tc-orange);

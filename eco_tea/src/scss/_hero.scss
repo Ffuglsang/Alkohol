@@ -1,5 +1,74 @@
+@import 'mixins/grid';
+
+$debug: false;
+
 
 .hero {
-    @include isGridItem("2 / 3", none);
+    @if $debug {
+        
+        a[href="#"] {
+            background-color: red;
+            border: 1px red;
+            box-shadow: 0px 0px 10px 0px red;
+        }
+    }
     
+    @include isSubGridContainer("2 / 3", auto, "auto auto", auto);
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/scaled/glas-kop.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .img-wrapper {
+        margin: 0;
+        padding: 2vw;
+        // position: relative;
+        @include isSubGridContainer("1 / span all", "1 / 2", "repeat(12, 1fr)", none);
+        // height: 80%;
+
+        
+        // position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50%;
+
+        figcaption {
+            @include isGridItem("1 / span all", "1 / 2");
+            // justify-items: center;
+
+            // margin: 1em;
+            // padding: 1em;
+            // height: 100%;
+
+        }
+
+        p {
+            // display: block;
+            align-self: flex-start;
+            margin: 0;
+            padding: 0; // margin-left: 40px;
+        }
+
+        button {
+            // @include isGridItem("1 / span all", "1 / 2");
+            // display: block;
+            align-self: flex-start; // margin: 40px;
+        }
+
+
+        img {
+            @include isGridItem("1 / span all", "1 / 2");
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    @include mq-phone {
+        // color: red;
+    }
 }
