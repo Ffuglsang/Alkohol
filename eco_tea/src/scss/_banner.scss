@@ -1,0 +1,61 @@
+.banner {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr);
+    background: $orange;
+    .banner-content {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr 0.9fr;
+        @include mq-phone {
+            grid-template-columns: 1fr;
+        }
+        article {
+            display: grid;
+            padding: 10% 10% 10% 0;
+            @include mq-phone {
+                    padding: 0;
+            }
+            
+            h2 {
+                margin: 0;
+                color: $white;
+                font-family: $headerfont;
+                font-size: 25px;
+                letter-spacing: 3px;
+                @include mq-phone {
+                    margin-top: 16px;
+                }
+            }
+            p {
+                color: $brown;
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+            @include mq-desktop {
+                h2 {
+
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 25px;
+
+                }
+            }
+        }
+        div {
+            padding: 10% 10% 0 10%;
+            @include mq-phone {
+                padding: 0;
+                figure {
+                    padding-top: 20px;
+                }
+            }
+            figure {
+                img {
+                    margin-bottom: -4px;
+                }
+            }
+        }
+    }
+}
