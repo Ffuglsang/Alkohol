@@ -138,22 +138,6 @@
   font-family: "Oswald", sans-serif;
 }
 
-.mini-articles__text {
-  background: grey;
-}
-
-.mini-articles__text p {
-  color: #a86315;
-}
-
-.mini-articles__text h3 {
-  color: white;
-}
-
-.heja {
-  color: white;
-}
-
 html {
   scroll-behavior: smooth;
   user-zoom: fixed;
