@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 .hero, .article-wrap, .mini-articles, .tea-carousel, .contact-form {
   /* Giving classes common grid item properties */
   width: 100%;
@@ -107,6 +108,91 @@
   margin-bottom: -4px;
 }
 
+header {
+  height: 150px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+#top-logo {
+  width: 75px;
+  margin-top: 15px;
+}
+
+nav {
+  text-align: center;
+  margin: auto;
+}
+
+.top-ul, .top-ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.tea-variant, .top-ul li a {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.tea-variant a, .top-ul a {
+  display: inline-block;
+  list-style-type: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sub-nav {
+  width: 100%;
+  margin: auto;
+  background-color: #f59b1a;
+  text-align: center;
+}
+
+.tea-variant {
+  color: #fff;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  justify-self: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 35px;
+  line-height: 35px;
+}
+
+.top-ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  height: auto;
+  vertical-align: middle;
+  height: 150px;
+  line-height: 150px;
+  font-size: 1rem;
+}
+
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   user-zoom: fixed;
@@ -116,7 +202,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: white;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-zoom: fixed;
@@ -137,6 +224,10 @@ body {
   text-size-adjust: none;
 }
 
+.hero {
+  grid-column: 2 / 3;
+}
+
 .imgWidth {
   width: 100%;
   height: auto;
@@ -149,6 +240,7 @@ body {
 
 .content-wrapper {
   grid-template-columns: minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr);
+  margin-top: 225px;
 }
 
 .article-wrap {

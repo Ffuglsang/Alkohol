@@ -62,6 +62,7 @@ body {
 .content-wrapper {
     @include isGridContainer("minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr)", none);
     // height: 200px;
+    margin-top: 225px;
 }
 
 .article-wrap {
