@@ -3,7 +3,12 @@
 @import 'vars';
 @import 'hero';
 @import 'banner';
+@import 'navigation';
 
+// new comment more
+*, *::after, *::before {
+  box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -14,8 +19,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: $light-orange;
-
+    background-color: $light-orange;
+    font-family: $mainfont;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -41,6 +46,10 @@ body {
 	text-size-adjust: none;
 }
 
+.hero {
+    @include isGridItem("2 / 3", none);
+}
+
 .imgWidth {
     width: 100%;
     height: auto;
@@ -53,10 +62,6 @@ body {
 .content-wrapper {
     @include isGridContainer("minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr)", none);
     // height: 200px;
-
-    // @include mq-phone {
-    //     color: red;
-    // }
 }
 
 .article-wrap {
@@ -76,6 +81,3 @@ body {
 .contact-form {
     @include isGridItem("2 / 3", none)
 }
-
-
-
