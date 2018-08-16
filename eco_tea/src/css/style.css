@@ -103,14 +103,17 @@ nav {
 
 .tea-variant {
   color: #fff;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  justify-self: center;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   height: 35px;
   line-height: 35px;
-  vertical-align: middle;
-  width: 65%;
 }
 
 .top-ul {
