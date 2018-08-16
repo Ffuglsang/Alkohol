@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
+.hero, .article-wrap, .mini-articles, .tea-carousel, .contact-form {
+  /* Giving classes common grid item properties */
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content-wrapper, .mini-articles {
+  /* Giving classes common grid container properties */
+  display: grid;
+}
+
+:root {
+  --tc-orange: #f59b1a;
+  --tc-brown: #a86315;
+  --tc-logocolor: #709a2d;
+  --font-main: Roboto, sans-serif;
+  --font-header: Oswald, sans-serif;
+}
+
+.hero {
+  grid-column: 2 / 3;
+}
+
+.banner {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr);
+  background: #f59b1a;
+}
+
+.banner .banner-content {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+}
+
+@media screen and (max-width: 767px) {
+  .banner .banner-content {
+    /* PHONE MQ */
+    grid-template-columns: 1fr;
+  }
+}
+
+.banner .banner-content article {
+  display: grid;
+  padding: 10% 10% 10% 0;
+}
+
+@media screen and (max-width: 767px) {
+  .banner .banner-content article {
+    /* PHONE MQ */
+    padding: 0;
+  }
+}
+
+.banner .banner-content article h2 {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  .banner .banner-content article h2 {
+    /* PHONE MQ */
+    margin-top: 16px;
+  }
+}
+
+.banner .banner-content article p {
+  color: #a86315;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner .banner-content article {
+    /* DESKTOP MQ */
+  }
+  .banner .banner-content article h2 {
+    font-size: 35px;
+  }
+  .banner .banner-content article p {
+    font-size: 25px;
+  }
+}
+
+.banner .banner-content div {
+  padding: 10% 10% 0 10%;
+}
+
+@media screen and (max-width: 767px) {
+  .banner .banner-content div {
+    /* PHONE MQ */
+    padding: 0;
+  }
+  .banner .banner-content div figure {
+    padding-top: 20px;
+  }
+}
+
+.banner .banner-content div figure img {
+  margin-bottom: -4px;
+}
+
+html {
+  scroll-behavior: smooth;
+  user-zoom: fixed;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-zoom: fixed;
+  overflow: hidden;
+  /* Prevent native touch events on Windows */
+  -ms-touch-action: none;
+  /* Prevent the callout on tap-hold and text selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Prevent text resize on orientation change, useful for web-apps */
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.imgWidth {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.content-wrapper {
+  grid-template-columns: minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr);
+}
+
+.article-wrap {
+  grid-column: 2 / 3;
+}
+
+.mini-articles {
+  grid-column: 2 / 3;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
+}
+
+.tea-carousel {
+  grid-column: 1 / span all;
+}
+
+.contact-form {
+  grid-column: 2 / 3;
+}
