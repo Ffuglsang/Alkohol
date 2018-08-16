@@ -3,6 +3,7 @@
 @import 'vars';
 @import 'hero';
 @import 'banner';
+@import 'miniarticles';
 
 
 html {
@@ -52,6 +53,7 @@ body {
 
 .content-wrapper {
     @include isGridContainer("minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr)", none);
+    grid-row-gap: 16px;
     // height: 200px;
 
     // @include mq-phone {
@@ -65,9 +67,7 @@ body {
 
 
 
-.mini-articles {
-    @include isSubGridContainer("2 / 3", none, "repeat(3, 1fr)", none);
-}
+
 
 .tea-carousel {
     @include isGridItem("1 / span all", none)

@@ -1,0 +1,36 @@
+.mini-articles {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    @include mq-phone {
+        grid-template-columns: 1fr;
+    }
+    article{
+        padding: 2vw;
+        border-radius: 3px;
+        background: #f5f5f5;
+        p {
+            margin-top: 5px;
+            color: $brown;
+            font-size: 140%;
+        }
+        h3 {
+            font-size: 160%;
+            font-family: $headerfont;
+        }
+    }
+}
+.mini-articles__text {
+    background: grey;
+
+    p {
+        color: $brown;
+    }
+    h3 {
+        color: white;
+    }
+}
+.heja {
+    color: white;
+}
