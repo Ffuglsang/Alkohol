@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
+:root {
+  --tc-orange: #f59b1a;
+  --tc-brown: #a86315;
+  --tc-logocolor: #ffcc00;
+  --font-main: 'Roboto', sans-serif;
+  --font-header: 'Oswald', sans-serif;
+}

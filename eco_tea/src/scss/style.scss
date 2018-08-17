@@ -6,6 +6,16 @@
 $bg-color: #0e0e0e;
 $color: #fff;
 
+@import 'hero';
+@import 'banner';
+@import 'navigation';
+@import 'miniarticles';
+
+// new comment more
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     user-zoom: fixed;
@@ -15,13 +25,14 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: $light-orange;
+    font-family: $mainfont;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     user-zoom: fixed;
     overflow: hidden;
 
-    background: $bg-color;
-    color: $color;
 
     /* Prevent native touch events on Windows */
 	-ms-touch-action: none;
@@ -41,26 +52,29 @@ body {
 	text-size-adjust: none;
 }
 
-.content-wrapper {
-    @include isGridContainer("1fr minmax(auto, 1200px) 1fr", none);
-    height: 200px;
-
-    @include mq-phone {
-        color: red;
-    }
-}
-
 .hero {
     @include isGridItem("2 / 3", none);
+}
+
+.imgWidth {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.content-wrapper {
+    @include isGridContainer("minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr)", none);
+    // height: 200px;
 }
 
 .article-wrap {
     @include isGridItem("2 / 3", none);
 }
 
-.banner {
-    @include isGridItem("1 / span all", none)
-}
+
 
 .mini-articles {
     @include isSubGridContainer("2 / 3", none, "repeat(3, 1fr)", none);
