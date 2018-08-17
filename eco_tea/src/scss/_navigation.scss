@@ -1,4 +1,5 @@
-header {
+.header {
+  z-index: 5;
   height: 150px;
   position: fixed;
   top: 0;
@@ -6,13 +7,22 @@ header {
   display: block;
   text-align: center;
   margin: auto;
-
+  transition: 300ms;
+  background-color: #f9f9f9;
+}
+.shrink-header {
+  height: 80px;
+}
+.shrink-header #top-logo {
+  width: 40px;
 }
 
 #top-logo {
+  transition: 300ms;
   width: 75px;
   margin-top: 15px;
 }
+
 nav {
 text-align: center;
 margin: auto;
@@ -40,6 +50,7 @@ margin: auto;
   margin: auto;
   background-color: $orange;
   text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .tea-variant {
@@ -52,6 +63,9 @@ text-align: center;
 margin: 0 auto;
 height: 35px;
 line-height: 35px;
+@include mq-phone {
+  font-size: 80%;
+}
 }
 
 .top-ul {
@@ -61,10 +75,19 @@ line-height: 35px;
   width: 65%;
   margin: auto;
   height: auto;
-  vertical-align: middle;
   height: 150px;
   line-height: 150px;
   font-size: 1rem;
+  transition: 300ms;
+
+  @include mq-phone {
+    width: 95%;
+    font-size: 0.8rem;
+  }
+}
+.shrink-header .top-ul {
+  height: 80px;
+  line-height: 80px;
 }
 
 ul {
