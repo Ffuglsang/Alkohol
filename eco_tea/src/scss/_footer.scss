@@ -1,0 +1,60 @@
+
+.contact-form {
+  background-color: #F59B1A;
+}
+
+.footerimg {
+    float: left;
+    width: 60%;
+    display: inline;
+}
+.footerform {
+    float: left;
+    margin-top: 5px;
+    width: 40%;
+}
+
+input, textarea {
+	height: 50px;
+	margin-bottom: 5px;
+  width: 80%;
+	padding: 10px;
+  display:block;
+  background-color: #FFFFFF;
+  color: #F59B1A;
+  border-width: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.button {
+	width: 180px;
+	height: 50px;
+    border: 2px solid white;
+	background-color: #C77915;
+	color: white;
+	font-weight: bold;
+	margin-top: 100px;
+  border-color: #F59B1A;
+  float: right;
+  margin-right: 70px;
+  border-radius: 20px;
+
+}
+
+::placeholder {
+    color: #F59B1A;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #F59B1A;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #F59B1A;
+}
