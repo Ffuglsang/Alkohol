@@ -116,6 +116,7 @@ header {
   display: block;
   text-align: center;
   margin: auto;
+  background-color: white;
 }
 
 #top-logo {
@@ -174,7 +175,6 @@ nav {
   width: 65%;
   margin: auto;
   height: auto;
-  vertical-align: middle;
   height: 150px;
   line-height: 150px;
   font-size: 1rem;
@@ -190,6 +190,7 @@ ul {
 }
 
 .gift-wrap {
+  grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
@@ -211,6 +212,16 @@ ul {
   margin: auto;
 }
 
+.blogpost {
+  grid-column: 2 / 3;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.blogpost img {
+  width: 100%;
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -222,7 +233,6 @@ html {
 }
 
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -230,7 +240,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-zoom: fixed;
-  overflow: hidden;
   /* Prevent native touch events on Windows */
   -ms-touch-action: none;
   /* Prevent the callout on tap-hold and text selection */
