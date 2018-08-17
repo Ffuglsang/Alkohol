@@ -17,7 +17,6 @@ html {
 }
 
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
     background-color: $light-orange;
@@ -26,7 +25,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     user-zoom: fixed;
-    overflow: hidden;
 
 
     /* Prevent native touch events on Windows */
