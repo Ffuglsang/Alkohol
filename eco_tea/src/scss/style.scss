@@ -1,12 +1,19 @@
 @import 'mixins/grid';
 @import 'mixins/mqs';
 @import 'vars';
-@import 'hero';
+@import 'footer';
 
-// new comment eol line
+$bg-color: #0e0e0e;
+$color: #fff;
+
+@import 'hero';
+@import 'banner';
+@import 'navigation';
+@import 'miniarticles';
+
 
 *, *::after, *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -18,8 +25,9 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: $light-orange;
-    font-family: var(--font-main);
+
+    background-color: $light-orange;
+    font-family: $mainfont;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -49,8 +57,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-header);
 }
 
+.hero {
+    @include isGridItem("2 / 3", none);
+}
+
+.imgWidth {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
 .content-wrapper {
-    @include isGridContainer("1fr minmax(auto, 1024px) 1fr", none);
+    @include isGridContainer("minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr)", none);
     // height: 200px;
 }
 
@@ -58,9 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     @include isGridItem("2 / 3", none);
 }
 
-.banner {
-    @include isGridItem("1 / span all", none)
-}
+
 
 .mini-articles {
     @include isSubGridContainer("2 / 3", none, "repeat(3, 1fr)", none);
@@ -73,6 +92,3 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form {
     @include isGridItem("2 / 3", none)
 }
-
-
-
