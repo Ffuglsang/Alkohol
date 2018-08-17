@@ -9,8 +9,9 @@ $color: #fff;
 @import 'hero';
 @import 'banner';
 @import 'navigation';
+@import 'giftbox';
+@import 'blog';
 @import 'miniarticles';
-
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -22,35 +23,26 @@ html {
 }
 
 body {
-    height: 100%;
+
     margin: 0;
     padding: 0;
-
-    background-color: $light-orange;
+    background-color: #f9f9f9;
     font-family: $mainfont;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    // user-zoom: fixed;
-    // overflow: hidden;
+
+    user-zoom: fixed;
 
 
-    // /* Prevent native touch events on Windows */
-	// -ms-touch-action: none;
+    /* Prevent native touch events on Windows */
+	-ms-touch-action: none;
 
-	// /* Prevent the callout on tap-hold and text selection */
-	// -webkit-touch-callout: none;
-	// -webkit-user-select: none;
-	// -moz-user-select: none;
-	// -ms-user-select: none;
-	// user-select: none;
-
-	// /* Prevent text resize on orientation change, useful for web-apps */
-	// -webkit-text-size-adjust: none;
-	// -moz-text-size-adjust: none;
-	// -ms-text-size-adjust: none;
-	// -o-text-size-adjust: none;
-	// text-size-adjust: none;
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 .content-wrapper {
     @include isGridContainer("minmax(16px, 1fr) minmax(auto, 1024px) minmax(16px, 1fr)", none);
     // height: 200px;
+    margin-top: 225px;
 }
 
 .article-wrap {

@@ -1,0 +1,12 @@
+.blogpost {
+  grid-column: 2 / 3;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  padding: 15px;
+  margin-bottom: 15px;
+
+  img {
+    width: 100%;
+  }
+
+}
