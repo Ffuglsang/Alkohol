@@ -1,5 +1,92 @@
 
+
+/* Start of Hero styles */
 .hero {
-    @include isGridItem("2 / 3", none);
+    @include isSubGridContainer("2 / 3", auto, "auto auto", auto);
+    padding: 0;
+    margin: 0;
+    // background-image: url('../images/scaled/glas-kop.jpg');
+    background: linear-gradient(to right, $logocolor 0%, transparent 80%), url("../images/scaled/glas-kop.jpg") no-repeat center; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    // color: black;
     
+    .img-wrapper {
+        color: #eee;
+        margin: 0;
+        padding: 2vw;
+        // position: relative;
+        @include isSubGridContainer("1 / span all", "1 / 2", "repeat(12, 1fr)", none);
+        // height: 80%;
+
+        
+        // position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50%;
+
+        p {
+            // display: block;
+            align-self: flex-start;
+            margin: 0;
+            padding: 0; // margin-left: 40px;
+            line-height: 1.5;
+            background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0) 80%);
+            // background: rgba(0,0,0,0.5);
+        }
+    }
+
+    .btn {
+        // -moz-box-shadow: 0px 10px 14px -7px $orange;
+        // -webkit-box-shadow: 0px 10px 14px -7px $orange;
+        // box-shadow: 0px 10px 14px -7px $orange;
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, lighten($orange, 20)), color-stop(1, $orange));
+        background:-moz-linear-gradient(top, lighten($orange, 20) 5%, $orange 100%);
+        background:-webkit-linear-gradient(top, lighten($orange, 20) 5%, $orange 100%);
+        background:-o-linear-gradient(top, lighten($orange, 20) 5%, $orange 100%);
+        background:-ms-linear-gradient(top, lighten($orange, 20) 5%, $orange 100%);
+        background:linear-gradient(to bottom, lighten($orange, 20) 5%, $orange 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c67c', endColorstr='#f59b1a',GradientType=0);
+        background-color:lighten($orange, 20);
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;
+        border-radius:8px;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        // font-family:Arial;
+        font-size:20px;
+        font-weight:bold;
+        padding:13px 32px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px darken($orange, 30);
+        transition: all 100ms;
+        margin-top: 2vw;
+        // text-align: center;
+        width: 50%;
+    
+    
+        &:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, $orange), color-stop(1, lighten($orange, 20)));
+            background:-moz-linear-gradient(top, $orange 5%, lighten($orange, 20) 100%);
+            background:-webkit-linear-gradient(top, $orange 5%, lighten($orange, 20) 100%);
+            background:-o-linear-gradient(top, $orange 5%, lighten($orange, 20) 100%);
+            background:-ms-linear-gradient(top, $orange 5%, lighten($orange, 20) 100%);
+            background:linear-gradient(to bottom, $orange 5%, lighten($orange, 20) 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f59b1a', endColorstr='#f9c67c',GradientType=0);
+            background-color:$orange;
+        }
+        &:active {
+            position:relative;
+            top:1px;
+            // box-shadow: 0px 5px 14px -7px $orange;
+        }
+        .lnr {
+            margin-left: 10%;
+        }
+    }
 }
+/* end of hero files */
+

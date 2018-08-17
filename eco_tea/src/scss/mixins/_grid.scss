@@ -3,6 +3,7 @@
 // v.1.05
 // ***************************************************/
 // SCSS CSS Grid 
+//
 
 ////
 /// This is a poster comment.
@@ -14,8 +15,9 @@
 /// Placeholder class with grid item properties
 /// @author Michael Koch
 %gridItemProps {
-    /* Giving classes common grid item properties */
-    // grid-row: auto;
+    /* Giving classes common  grid item properties */
+    // grid-row: auto; 
+    // display: grid;
     width: 100%;
     // height: auto;
     height: 100%;
@@ -55,7 +57,11 @@
 @mixin isSubGridContainer($colSpan, $rowSpan, $colSpec, $rowSpec) {
     @extend %gridItemProps;
     @extend %gridContainerProps;
-    @if $rowSpan == none {
+    @if ($rowSpan == none) and ($rowSpec == none) {
+        grid-column: #{$colSpan};
+        grid-template-columns: #{$colSpec};
+    }
+    @if ($rowSpan == none) and ($rowSpec != none) {
         grid-column: #{$colSpan};
         grid-template-columns: #{$colSpec};
         grid-template-rows: #{$rowSpec};
