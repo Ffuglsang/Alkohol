@@ -1,6 +1,11 @@
 @import 'mixins/grid';
 @import 'mixins/mqs';
 @import 'vars';
+@import 'footer';
+
+$bg-color: #0e0e0e;
+$color: #fff;
+
 @import 'hero';
 @import 'banner';
 @import 'navigation';
