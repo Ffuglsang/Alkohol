@@ -52,10 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 .content-wrapper {
     @include isGridContainer("1fr minmax(auto, 1024px) 1fr", none);
     // height: 200px;
-
-    @include mq-phone {
-        color: red;
-    }
 }
 
 .article-wrap {
