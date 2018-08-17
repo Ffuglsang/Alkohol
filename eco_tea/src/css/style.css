@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
-
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 .hero, .hero .img-wrapper, .article-wrap, .mini-articles, .tea-carousel, .contact-form {
-
-
+  /* Giving classes common  grid item properties */
   width: 100%;
   height: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-
 .hero, .hero .img-wrapper, .content-wrapper, .mini-articles {
-
+  /* Giving classes common grid container properties */
   display: grid;
 }
 
@@ -26,6 +23,7 @@
 
 .contact-form {
   background-color: #F59B1A;
+  margin-top: 25px;
 }
 
 .footerimg {
@@ -197,6 +195,7 @@ textarea {
   margin-left: 10%;
 }
 
+/* end of hero files */
 .banner {
   grid-column: 1 / -1;
   display: grid;
@@ -289,7 +288,6 @@ textarea {
   display: block;
   text-align: center;
   margin: auto;
-
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
@@ -320,6 +318,7 @@ nav {
 .top-ul, .top-ul li {
   display: inline-block;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .tea-variant, .top-ul li a {
@@ -357,7 +356,6 @@ nav {
   line-height: 35px;
 }
 
-
 @media screen and (max-width: 767px) {
   .tea-variant {
     /* PHONE MQ */
@@ -371,6 +369,7 @@ nav {
   text-align: center;
   width: 65%;
   margin: auto;
+  height: auto;
   height: 150px;
   line-height: 150px;
   font-size: 1rem;
@@ -390,11 +389,6 @@ nav {
 .shrink-header .top-ul {
   height: 80px;
   line-height: 80px;
-  vertical-align: middle;
-  height: 150px;
-  line-height: 150px;
-  font-size: 1rem;
-
 }
 
 ul {
@@ -405,7 +399,6 @@ ul {
   -webkit-padding-start: 0;
 }
 
-
 .gift-wrap {
   grid-column: 2 / 3;
   display: grid;
@@ -415,21 +408,11 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-
-.mini-articles {
-  grid-column: 2/3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-}
-
-@media screen and (max-width: 767px) {
-  .mini-articles {
+  .gift-wrap {
     /* PHONE MQ */
     grid-template-columns: 1fr;
   }
 }
-
 
 .gift-container {
   border: 2px solid orange;
@@ -454,7 +437,21 @@ ul {
 
 .blogpost img {
   width: 100%;
+}
+
+.mini-articles {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .mini-articles {
+    /* PHONE MQ */
+    grid-template-columns: 1fr;
   }
+}
 
 .mini-articles article {
   padding: 2vw;
@@ -484,7 +481,6 @@ html {
 }
 
 body {
-
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -500,17 +496,10 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* Prevent text resize on orientation change, useful for web-apps */
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  -o-text-size-adjust: none;
-  text-size-adjust: none;
-  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-header);
-
 }
 
 .hero {
@@ -539,6 +528,10 @@ h1, h2, h3, h4, h5, h6 {
 .mini-articles {
   grid-column: 2 / 3;
   grid-template-columns: repeat(3, 1fr);
+  grid-column: 2 / 3;
+  grid-row: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
 }
 
 .tea-carousel {
