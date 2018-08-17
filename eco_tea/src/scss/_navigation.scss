@@ -63,6 +63,9 @@ text-align: center;
 margin: 0 auto;
 height: 35px;
 line-height: 35px;
+@include mq-phone {
+  font-size: 80%;
+}
 }
 
 .top-ul {
@@ -75,8 +78,12 @@ line-height: 35px;
   height: 150px;
   line-height: 150px;
   font-size: 1rem;
-
   transition: 300ms;
+
+  @include mq-phone {
+    width: 95%;
+    font-size: 0.8rem;
+  }
 }
 .shrink-header .top-ul {
   height: 80px;

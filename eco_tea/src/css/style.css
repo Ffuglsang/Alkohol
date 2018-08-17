@@ -184,6 +184,13 @@ nav {
   line-height: 35px;
 }
 
+@media screen and (max-width: 767px) {
+  .tea-variant {
+    /* PHONE MQ */
+    font-size: 80%;
+  }
+}
+
 .top-ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -197,6 +204,14 @@ nav {
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
+}
+
+@media screen and (max-width: 767px) {
+  .top-ul {
+    /* PHONE MQ */
+    width: 95%;
+    font-size: 0.8rem;
+  }
 }
 
 .shrink-header .top-ul {
@@ -218,6 +233,13 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .gift-wrap {
+    /* PHONE MQ */
+    grid-template-columns: 1fr;
+  }
 }
 
 .gift-container {
