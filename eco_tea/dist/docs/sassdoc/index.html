@@ -1,0 +1,282 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Eco_tea - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Eco_tea - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Eco Tea Website</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Eco_tea - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="grid"><a href="#grid">grid</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="grid-placeholder"><a href="#grid-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="grid" data-name="gridItemProps" data-type="placeholder"><a href="#grid-placeholder-gridItemProps">gridItemProps</a></li><li class="sidebar__item sassdoc__item" data-group="grid" data-name="gridContainerProps" data-type="placeholder"><a href="#grid-placeholder-gridContainerProps">gridContainerProps</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="grid-mixin"><a href="#grid-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="grid" data-name="isGridContainer" data-type="mixin"><a href="#grid-mixin-isGridContainer">isGridContainer</a></li><li class="sidebar__item sassdoc__item" data-group="grid" data-name="isSubGridContainer" data-type="mixin"><a href="#grid-mixin-isSubGridContainer">isSubGridContainer</a></li><li class="sidebar__item sassdoc__item" data-group="grid" data-name="isGridItem" data-type="mixin"><a href="#grid-mixin-isGridItem">isGridItem</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="media quiries"><a href="#media quiries">media quiries</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="media quiries-mixin"><a href="#media quiries-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="media quiries" data-name="mediaQueries" data-type="mixin"><a href="#media quiries-mixin-mediaQueries">mediaQueries</a></li><li class="sidebar__item sassdoc__item" data-group="media quiries" data-name="mq-phone" data-type="mixin"><a href="#media quiries-mixin-mq-phone">mq-phone</a></li><li class="sidebar__item sassdoc__item" data-group="media quiries" data-name="mq-tablet" data-type="mixin"><a href="#media quiries-mixin-mq-tablet">mq-tablet</a></li><li class="sidebar__item sassdoc__item" data-group="media quiries" data-name="mq-desktop" data-type="mixin"><a href="#media quiries-mixin-mq-desktop">mq-desktop</a></li><li class="sidebar__item sassdoc__item" data-group="media quiries" data-name="mq-custom" data-type="mixin"><a href="#media quiries-mixin-mq-custom">mq-custom</a></li><li class="sidebar__item sassdoc__item" data-group="media quiries" data-name="mq-print" data-type="mixin"><a href="#media quiries-mixin-mq-print">mq-print</a></li><li class="sidebar__item sassdoc__item" data-group="media quiries" data-name="mq-printable" data-type="mixin"><a href="#media quiries-mixin-mq-printable">mq-printable</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="grid"><div class="container">grid</div></h1><section class="main__sub-section" id="grid-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="grid-placeholder-gridItemProps"><h3 class="item__heading"><a class="item__name" href="#placeholder-gridItemProps">gridItemProps</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%gridItemProps { 
+    /* Giving classes common  grid item properties */
+    // grid-row: auto; 
+    // display: grid;
+    width: 100%;
+    // height: auto;
+    height: 100%;
+    box-sizing: border-box;
+ }" data-collapsed="%gridItemProps { ... }"><code>%gridItemProps { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Placeholder class with grid item properties</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-isSubGridContainer"><code>isSubGridContainer</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-isGridItem"><code>isGridItem</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="grid-placeholder-gridContainerProps"><h3 class="item__heading"><a class="item__name" href="#placeholder-gridContainerProps">gridContainerProps</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%gridContainerProps { 
+    /* Giving classes common grid container properties */
+    display: grid;
+ }" data-collapsed="%gridContainerProps { ... }"><code>%gridContainerProps { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Placeholder class with grid container properties</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-isGridContainer"><code>isGridContainer</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-isSubGridContainer"><code>isSubGridContainer</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section></section><section class="main__sub-section" id="grid-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="grid-mixin-isGridContainer"><h3 class="item__heading"><a class="item__name" href="#mixin-isGridContainer">isGridContainer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin isGridContainer($colSpec, $rowSpec) { 
+    @extend %gridContainerProps;
+
+    @if $rowSpec == none {
+        grid-template-columns: #{$colSpec};
+    }
+    @else {
+        grid-template-columns: #{$colSpec};
+        grid-template-rows: #{$rowSpec};
+    }
+ }" data-collapsed="@mixin isGridContainer($colSpec, $rowSpec) { ... }"><code>@mixin isGridContainer($colSpec, $rowSpec) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to define a grid container</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$colSpec</code></th><td data-label="desc"><p>Number of columns and spec</p></td><td data-label="type"><code>Column specs</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$rowSpec</code></th><td data-label="desc"><p>Number of rows and spec. For no row parse none.</p></td><td data-label="type"><code>Row specs</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#grid-placeholder-gridContainerProps"><code>gridContainerProps</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="grid-mixin-isSubGridContainer"><h3 class="item__heading"><a class="item__name" href="#mixin-isSubGridContainer">isSubGridContainer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin isSubGridContainer($colSpan, $rowSpan, $rowSpec, $rowSpec) { 
+    @extend %gridItemProps;
+    @extend %gridContainerProps;
+    @if ($rowSpan == none) and ($rowSpec == none) {
+        grid-column: #{$colSpan};
+        grid-template-columns: #{$colSpec};
+    }
+    @if ($rowSpan == none) and ($rowSpec != none) {
+        grid-column: #{$colSpan};
+        grid-template-columns: #{$colSpec};
+        grid-template-rows: #{$rowSpec};
+    }
+    @else {
+        grid-column: #{$colSpan};
+        grid-row: #{$rowSpan};
+        grid-template-columns: #{$colSpec};
+        grid-template-rows: #{$rowSpec};
+    }
+ }" data-collapsed="@mixin isSubGridContainer($colSpan, $rowSpan, $rowSpec, $rowSpec) { ... }"><code>@mixin isSubGridContainer($colSpan, $rowSpan, $rowSpec, $rowSpec) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to define a sub grid container</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$colSpan</code></th><td data-label="desc"><p>Column placement in outer grid</p></td><td data-label="type"><code>Column span</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$rowSpan</code></th><td data-label="desc"><p>Row placement in outer grid</p></td><td data-label="type"><code>Row span</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$rowSpec</code></th><td data-label="desc"><p>Number of column and spec in inner grid.</p></td><td data-label="type"><code>Column specs</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$rowSpec</code></th><td data-label="desc"><p>Number of rows and spec in inner grid. For no row parse none.</p></td><td data-label="type"><code>Row specs</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#grid-placeholder-gridItemProps"><code>gridItemProps</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#grid-placeholder-gridContainerProps"><code>gridContainerProps</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="grid-mixin-isGridItem"><h3 class="item__heading"><a class="item__name" href="#mixin-isGridItem">isGridItem</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin isGridItem($colSpan, $rowSpan) { 
+    @extend %gridItemProps;
+    @if $rowSpan == none {
+        grid-column: #{$colSpan};
+    }
+    @else {
+        grid-column: #{$colSpan}; //overriding rowSpan from gridItemProps
+        grid-row: #{$rowSpan};
+    }
+ }" data-collapsed="@mixin isGridItem($colSpan, $rowSpan) { ... }"><code>@mixin isGridItem($colSpan, $rowSpan) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to define a grid item</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$colSpan</code></th><td data-label="desc"><p>Row placement in outer grid</p></td><td data-label="type"><code>Column span</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$rowSpan</code></th><td data-label="desc"><p>Column placement in outer grid. For no row parse none.</p></td><td data-label="type"><code>Row span</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#grid-placeholder-gridItemProps"><code>gridItemProps</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="media quiries"><div class="container">media quiries</div></h1><section class="main__sub-section" id="media quiries-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="media quiries-mixin-mediaQueries"><h3 class="item__heading"><a class="item__name" href="#mixin-mediaQueries">mediaQueries</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin mediaQueries($tablet-width, $desktop-width) { 
+    @media screen and (max-width: #{$tablet-width - $mqBuffer}) {
+      // /* Mediaquery for Phones */
+      // @include mq-std-font;
+    }
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - $mqBuffer}) {
+        // /* Mediaquery for tablet */
+        // LIST MEDIAQUERIES FOR TABLET WITH HERE
+        // @include mq-md-scaler;
+        // @include mq-md-header;
+        // @include mq-md-gridcontainer;
+    }  
+    
+    @media (min-width: #{$desktop-width}) {
+        // /* Mediaquery for desktop */
+        // LIST MEDIAQUERIES FOR DESKTOP WITH HERE
+    }    
+ }" data-collapsed="@mixin mediaQueries($tablet-width, $desktop-width) { ... }"><code>@mixin mediaQueries($tablet-width, $desktop-width) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to make specific compile placement mediaqueries</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$tablet-width</code></th><td data-label="desc"><p>Below is phone. Between $tablet-width and $dekstop-width is tablet</p></td><td data-label="type"><code>Px</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$desktop-width</code></th><td data-label="desc"><p>Above this is desktop</p></td><td data-label="type"><code>Px</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="media quiries-mixin-mq-phone"><h3 class="item__heading"><a class="item__name" href="#mixin-mq-phone">mq-phone</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin mq-phone() { 
+    @media screen and (max-width: #{$tablet-width - $mqBuffer}) {
+        /* PHONE MQ */
+      @content;
+    }
+ }" data-collapsed="@mixin mq-phone() { ... }"><code>@mixin mq-phone() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to make mediaqueries for phone Use like: @include mq-phone{ color: black; }</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="media quiries-mixin-mq-tablet"><h3 class="item__heading"><a class="item__name" href="#mixin-mq-tablet">mq-tablet</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin mq-tablet() { 
+    @media screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - $mqBuffer}) {
+        /* TABLET MQ */
+      @content;
+    }
+   }" data-collapsed="@mixin mq-tablet() { ... }"><code>@mixin mq-tablet() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to make mediaqueries for tablet Use like: @include mq-tablet{ color: black; }</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="media quiries-mixin-mq-desktop"><h3 class="item__heading"><a class="item__name" href="#mixin-mq-desktop">mq-desktop</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin mq-desktop() { 
+    @media screen and (min-width: #{$desktop-width}) {
+        /* DESKTOP MQ */
+      @content;
+    }
+   }" data-collapsed="@mixin mq-desktop() { ... }"><code>@mixin mq-desktop() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to make mediaqueries for dekstop Use like: @include mq-desktop{ color: black; }</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="media quiries-mixin-mq-custom"><h3 class="item__heading"><a class="item__name" href="#mixin-mq-custom">mq-custom</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin mq-custom($min, $max) { 
+    @media screen and (min-width: #{$min}) and (max-width: #{$max - $mqBuffer}) {
+        /* CUSTOM MQ */
+      @content;
+    }
+   }" data-collapsed="@mixin mq-custom($min, $max) { ... }"><code>@mixin mq-custom($min, $max) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to make custom mediaqueries Use like: @include mq-custom(700px, 1200px){ color: black; }</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$min</code></th><td data-label="desc"><p>Minimum size</p></td><td data-label="type"><code>Px</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$max</code></th><td data-label="desc"><p>Maximum size</p></td><td data-label="type"><code>Px</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="media quiries-mixin-mq-print"><h3 class="item__heading"><a class="item__name" href="#mixin-mq-print">mq-print</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin mq-print() { 
+    @media print {
+        /* PRINT MQ */
+      @content;
+    }
+   }" data-collapsed="@mixin mq-print() { ... }"><code>@mixin mq-print() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to make print mediaqueries Use like: @include mq-print{ color: black; }</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section><section class="main__item container item" id="media quiries-mixin-mq-printable"><h3 class="item__heading"><a class="item__name" href="#mixin-mq-printable">mq-printable</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin mq-printable() { 
+
+  // @media print {
+
+  //   * {
+  //     background: transparent !important;
+  //     color: #000 !important;
+  //     box-shadow: none !important;
+  //     text-shadow: none !important;
+  //     opacity: 1 !important;
+  //     // filter: grayscale(100%); // For Black/white print.
+  //   }
+
+
+  //   body {
+  //     // width: 30%;
+  //   }
+
+  //   nav, .navi {
+  //     display: none;
+  //     width: 0;
+  //     height: 0;
+  //   }
+
+  //   #intro {
+  //     position: absolute;
+  //     width: 50% !important;
+
+  //   }
+
+  //   .start-slide {
+  //     position: relative;
+  //   }
+
+  //   .start-slide-info {
+  //     // @include fullWidthRow1(false);
+  //     grid-column: 1 /13;
+  //     grid-row: 1 / 2;
+  //     margin: 0 0 0 0;
+  //     padding: 0 0 0 0;
+  //     text-align: center;
+  //     // width: 30%;
+
+  //     h1 {
+  //       font-size: 4rem;
+  //       color: green;
+  //       margin: 0;
+  //       padding: 0;
+  //     }
+
+  //     h2 {
+  //       font-size: 2rem;
+  //       letter-spacing: 0.0001rem;
+  //     }
+  //   }
+
+  //   .start-slide-img {
+  //     // grid-column: 3 / 11;
+  //     // grid-row: 2 / 3;
+  //     // @include fullWidthRow2(false);
+  //     grid-column: 1 / 11;
+  //     grid-row: 2 / 3;
+  //     overflow: hidden;
+  //     // page-break-after: avoid;
+
+  //     img {
+  //       display: inline-block;
+  //       visibility: visible;
+  //       width: 100%;
+  //       margin-top: 0;
+  //       margin-bottom: 0;
+  //       margin-left: auto;
+  //       margin-right: auto;
+  //       vertical-align: center;
+  //     }
+
+  //     section {
+  //       display: none;
+  //     }
+  //   }
+
+  //   .container {
+  //     // opacity: 1 !important;
+  //     page-break-inside: avoid;
+  //     // margin: 1rem 2rem 0 2rem;
+  //     margin-top: 0;
+  //     margin-bottom: 0;
+  //     width: 100%;
+  //   }
+
+  //   .fig-icon {
+  //     margin-top: 20%;
+  //     width: 50%;
+  //   }
+
+  //   .bg-ani-code {
+  //     p, h2 {
+  //       text-shadow: none;
+  //       // font-size: 1rem;
+  //     }
+  //   }
+
+  //   .typewrite {
+  //     display: none;
+
+  //     .wrap {
+  //       display: none;
+  //     }
+  //   }
+    
+  //   .lnr {
+  //     display: none;
+  //     visibility: hidden;
+  //     font-size: 0px;
+  //     animation: none;
+  //     // animation-play-state: paused;
+  //   }
+
+  //   a,
+  //   a:visited {
+  //     text-decoration: none;
+  //   }
+
+  //   a[href]:after {
+  //     content: &quot; (&quot; attr(href) &quot;)&quot;;
+  //   }
+
+  //   abbr[title]:after {
+  //     content: &quot; (&quot; attr(title) &quot;)&quot;;
+  //   }
+
+  //   a:after,
+  //   a[href^=&quot;javascript:&quot;]:after,
+  //   a[href^=&quot;#&quot;]:after {
+  //     content: &quot;&quot;;
+  //   }
+
+  //   pre,
+  //   blockquote {
+  //     border: 1px solid #999;
+  //     page-break-inside: avoid;
+  //   }
+
+  //   thead {
+  //     display: table-header-group;
+  //   }
+
+  //   tr,
+  //   img {
+  //     page-break-inside: avoid;
+  //   }
+
+  //   img {
+  //     max-width: 100% !important;
+  //     // filter: grayscale(100);
+  //     // display: block;
+  //     // visibility: visible;
+  //   }
+
+  //   @page {
+  //     margin: 0.5cm;
+  //     // margin: 2cm;
+  //   }
+
+  //   h2 {
+  //     font-size: 2rem;
+  //   }
+
+  //   p,
+  //   h2,
+  //   h3 {
+  //     orphans: 3;
+  //     widows: 3;
+  //   }
+
+  //   h2,
+  //   h3 {
+  //     page-break-after: avoid;
+  //   }
+
+  //   p,
+  //   a,
+  //   figcaption {
+  //     font-family: var(--p-font);
+  //     font-size: 1rem;
+  //     letter-spacing: 0.008rem;
+  //     font-weight: 400;
+  //     // text-align: left;
+  //   }
+  // }
+ }" data-collapsed="@mixin mq-printable() { ... }"><code>@mixin mq-printable() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to make specific compile placement printable mediaqueries</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Michael Koch</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Eco_tea</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

@@ -1,0 +1,60 @@
+[20:32:55] Using gulpfile ~/Hentet/EcoTea-master/eco_tea-seo/gulpfile.js
+[20:32:55] Starting 'htmlval'...
+[20:32:55] HTML Error: blog.html The character encoding was not declared. Proceeding using “windows-1252”.
+[20:32:55] HTML Error: blog.html Line 35, Column 31: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:55]         <a href="tearoom.html"><li>Tea room</li></a>
+[20:32:55] HTML Error: blog.html Line 36, Column 28: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:55]         <a href="blog.html"><li>Blog</li></a>
+[20:32:55] HTML Error: blog.html Line 37, Column 29: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:55]         <a href="index.html"><li><img id="top-logo" src="./i
+[20:32:55] HTML Error: blog.html Line 38, Column 29: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:55]         <a href="about.html"><li>Om os</li></a>
+[20:32:55] HTML Error: blog.html Line 39, Column 32: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:55]         <a href="#kontakt-form"><li>Kontakt os</li></a>
+[20:32:55] HTML Error: blog.html Line 41, Column 12: End tag “nav” seen, but there were open elements.
+[20:32:55]       </nav>
+[20:32:55] HTML Error: blog.html Line 34, Column 25: Unclosed element “ul”.
+[20:32:55]       <ul class="top-ul">
+[20:32:56] HTML Error: giftbox.html The character encoding was not declared. Proceeding using “windows-1252”.
+[20:32:56] HTML Error: giftbox.html Line 35, Column 19: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href=""><li>Tea room</li></a>
+[20:32:56] HTML Error: giftbox.html Line 36, Column 19: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href=""><li>Blog</li></a>
+[20:32:56] HTML Error: giftbox.html Line 37, Column 29: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href="index.html"><li><img id="top-logo" src="./i
+[20:32:56] HTML Error: giftbox.html Line 38, Column 19: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href=""><li>Om os</li></a>
+[20:32:56] HTML Error: giftbox.html Line 39, Column 32: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href="#kontakt-form"><li>Kontakt os</li></a>
+[20:32:56] HTML Error: giftbox.html Line 41, Column 12: End tag “nav” seen, but there were open elements.
+[20:32:56]       </nav>
+[20:32:56] HTML Error: giftbox.html Line 34, Column 25: Unclosed element “ul”.
+[20:32:56]       <ul class="top-ul">
+[20:32:56] HTML Error: index.html Line 38, Column 31: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href="tearoom.html"><li>Tea&nbsp;room</li></a>
+[20:32:56] HTML Error: index.html Line 39, Column 28: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href="blog.html"><li>Blog</li></a>
+[20:32:56] HTML Error: index.html Line 40, Column 29: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href="index.html"><li><img id="top-logo" src="./i
+[20:32:56] HTML Error: index.html Line 41, Column 29: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href="about.html"><li>Om&nbsp;os</li></a>
+[20:32:56] HTML Error: index.html Line 42, Column 32: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)
+[20:32:56]         <a href="#kontakt-form"><li>Kontakt&nbsp;os</li></a>
+[20:32:56] HTML Error: index.html Line 44, Column 12: End tag “nav” seen, but there were open elements.
+[20:32:56]       </nav>
+[20:32:56] HTML Error: index.html Line 37, Column 25: Unclosed element “ul”.
+[20:32:56]       <ul class="top-ul">
+[20:32:56] HTML Error: index.html Line 82, Column 73: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+[20:32:56] "../images/scaled/glas-kop.jpg" class="imgWidth"/>
+[20:32:56] HTML Error: index.html Line 90, Column 58: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+[20:32:56]           <img src="/images/te-kit.jpg" class="imgWidth"/>
+[20:32:56] HTML Error: index.html Line 96, Column 68: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+[20:32:56] ="/images/scaled/groen-kop.jpg" class="imgWidth"/>
+[20:32:56] HTML Error: index.html Line 102, Column 68: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+[20:32:56] ="/images/scaled/groen-kop.jpg" class="imgWidth"/>
+[20:32:56] HTML Error: index.html Line 113, Column 16: The “center” element is obsolete. Use CSS instead.
+[20:32:56]         <center>
+[20:32:56] HTML Error: index.html Line 114, Column 48: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+[20:32:56]           <img src="images/ecotea-logotext.png">
+[20:32:56] HTML Error: index.html Line 118, Column 54: Bad value “” for attribute “action” on element “form”: Must be non-empty.
+[20:32:56]         <form action="" method="post" class="contact">
